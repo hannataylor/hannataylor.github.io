@@ -1,14 +1,10 @@
 <!DOCTYPE html>
-<html lang="en-US">
-
 <head>
-  <title>Hanna Taylor</title>
+  <title>Phase 0 - Week 3</title>
   <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="stylesheets/default.css">
   <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
 </head>
-
-
 <body>
 
 <!--Dropdown Menu-->
@@ -46,13 +42,32 @@
 
 <div class="site-body">
 
-<section class="blog-index">
-<h3>BLOG</h3>
 
-<a href="git.html"><img src="../imgs/week1icon.png" alt="week1"></a>
-<a href="css-concepts.html"><img src="../imgs/week3icon.png" alt="week3"></a>
-</section>
+  <header class ="blog-title">
+    <h1>Phase 0 - Week 3 </h1>
+    <h2>CSS Concepts</h2>
+    <h4>2/8/16</h4>
+    <br><br>
 
+    <article class ="blog-post">
+      <p>There are a lot of concepts to grasp in CSS, but for the sake of this blog post I'm just going to focus on one, and that is <b>positioning</b>.
+      <br><br>
+      What are the differences between relative, absolute, fixed, and static positioning?</p>
+      <br>
+      <li>Relative</li>
+        <ul>Relative is a bit confusing. If you set something to relative it might appear to do nothing. That's because you have to tell it where to go by specifying top:__, bottom:__, left:__, and right:__. And then the element will be positioned based on what you specify. So if you put top:50px, then the element will move 50px off from the top, so basically, it will move 50px down. If you have static elements on the page, relative can move on top of the static element while the static element stays in the same spot.</ul>
+      <li>Absolute</li>
+        <ul>Absolute positioning is a bit different. So, relatively positioned elements don't affect static elements at all. However, if you set an element to be absolute, it's like it doesn't exist, and a static element can move to fill the spot that the absolute element would have been. Absolute positions are also determined by its parent elements.</ul>
+      <li>Fixed</li>
+        <ul>Fixed elements arecompletely independent and they will be positioned based on the browser window. Also, when the page is scrolled, the element will stay where it is and not follow along when you scroll. </ul>
+      <li>Static</li>
+        <ul>Static is the "default" positioning, so when you don't specifiy a position, it will automatically be set to static. Elements that are specified as static will stack one after the other in the order that they come in your code.</ul>
+
+        <br>
+        I hope that makes sense, if not, don't worry, I still don't fully understand it either. But with practice and research, it will start to make more sense to you.
+
+      </article>
+    </main>
 
 <section class="about-me">
     <h3>ABOUT ME</h3>
@@ -90,5 +105,5 @@
 
 <p class="copyright">&copy;2016 Hanna Taylor</p>
 </div>
-</body>
-</html>
+  </body>
+  </html>
