@@ -2,15 +2,53 @@
 <head>
   <title>Phase 0 - Week 1</title>
   <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="your-stylesheet-link-here.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
 </head>
 <body>
-  <main>
+
+<!--Dropdown Menu-->
+
+<nav id="navigation" class="site-navigation" role="navigation">
+    <ul class="menu">
+        <li class="menu-item"><a href="http://hannataylor.github.io/">HOME</a>
+            </li>
+
+        <li class="menu-item"><a href="#">ABOUT</a>
+            <ul class="dropdown">
+                <li class="menu-item sub-menu"><a href="#">CONTACT</a></li>
+                <li class="menu-item sub-menu"><a href="#">RESUME</a></li>
+            </ul>
+        </li>
+
+        <li class="menu-item"><a href="http://hannataylor.github.io/blog/index.html">BLOG</a>
+        </li>
+
+        <li class="menu-item"><a href=".">PROJECTS</a>
+            <ul class="dropdown">
+                <li class="menu-item sub-menu"><a href="#">DBC</a></li>
+                <li class="menu-item sub-menu"><a href="#">PERSONAL</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+
+<header class="header">
+    <img src="../imgs/header.jpg" alt="header">
+</header>
+
+<br><br><br>
+
+<div class="site-body">
+
+
+  <header class ="blog-title">
     <h1>Phase 0 - Week 1 </h1>
     <h2>Command Line, Git, and GitHub</h2>
     <h4>1/24/16</h4>
 
-    <section>
+    <article class ="blog-post">
       <p>This is my first week of Phase 0 at Dev Bootcamp and coming into this I'm really excited to start learning code, but I must admit, I'm also really intimidated at the same time. This week we learned about Command Line, Git, and GitHub, and all of those words scared me at first, and I'll be honest, I put off getting started on my work for a few days because I didn't know what I was getting myself into...but it's really not that hard!</p>
 
       <p>All the programmer lingo is really what intimidated me at first, so I'll clear up a few of those terms really quickly.</p>
@@ -40,7 +78,44 @@
       </p>
 
         <!-- copy and paste as many sections as you want to add paragraphs -->
-      </section>
+      </article>
     </main>
+
+<section class="about-me">
+    <h3>ABOUT ME</h3>
+        <img src="../imgs/profilepic.png" alt="profile pic" height="130px" width="130px"></a>
+        <p>Hanna Taylor<br>
+        B.S. Business Administration ('13)<br>
+        Student at Dev Bootcamp<br>
+        Based in New York City</p>
+
+<a href="https://github.com/hannataylor">
+    <img src="../imgs/github.png" alt="github logo" height="44px" width="44px"></a>
+<a href="https://www.linkedin.com/in/hannataylor">  <img src="../imgs/linkedin.png" alt="linkedin logo"></a>
+<a href="https://www.facebook.com/hannataylor">
+    <img src="../imgs/facebook.png" alt="facebook logo"></a>
+<a href="https://twitter.com/hanna__taylor">
+    <img src="../imgs/twitter.png" alt="twitter logo"></a>
+<a href="http://wanderlusttour.com">
+    <img src="../imgs/tumblr.png" alt="tumblr logo"></a>
+</section>
+<br>
+<br>
+<br>
+
+<footer class="footer-nav">
+
+    <a href="http://hannataylor.github.io/">HOME</a>
+    <a href="#">ABOUT</a>
+
+    <a href="http://hannataylor.github.io/blog/index.html">BLOG   </a>
+
+    <a href="#">PROJECTS</a>
+    <br><br>
+
+</footer>
+
+<p class="copyright">&copy;2016 Hanna Taylor</p>
+</div>
   </body>
   </html>

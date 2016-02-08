@@ -1,21 +1,55 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <link rel="stylesheet" type="text/css" href="stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+  </head>
+
+
 <title>Title of Blog Post</title>
 <body>
 
-<nav>
-  <a href="http://hannataylor.github.io/index">HOME</a> |
-  <a href="http://hannataylor.github.io/about">ABOUT</a> |
-  <a href="http://hannataylor.github.io/blog">BLOG</a> |
-  <a href="http://hannataylor.github.io/portfolio">PORTFOLIO</a>
+<!--Dropdown Menu-->
+
+<nav id="navigation" class="site-navigation" role="navigation">
+    <ul class="menu">
+        <li class="menu-item"><a href="http://hannataylor.github.io/">HOME</a>
+            </li>
+
+        <li class="menu-item"><a href="#">ABOUT</a>
+            <ul class="dropdown">
+                <li class="menu-item sub-menu"><a href="#">CONTACT</a></li>
+                <li class="menu-item sub-menu"><a href="#">RESUME</a></li>
+            </ul>
+        </li>
+
+        <li class="menu-item"><a href="http://hannataylor.github.io/blog/index.html">BLOG</a>
+        </li>
+
+        <li class="menu-item"><a href=".">PROJECTS</a>
+            <ul class="dropdown">
+                <li class="menu-item sub-menu"><a href="#">DBC</a></li>
+                <li class="menu-item sub-menu"><a href="#">PERSONAL</a></li>
+            </ul>
+        </li>
+    </ul>
 </nav>
 
-  <article>
-    <header>
+
+<header class="header">
+    <img src="../imgs/header.jpg" alt="header">
+</header>
+
+<br><br><br>
+
+<div class="site-body">
+
+
+    <header class ="blog-title">
       <h1>Title of Blog Post</h1>
       <h4>Posted on 1/30/16 at 10:21 AM</h4>
     </header>
-
+<article class ="blog-post">
     <p>Blog post text will go here.<br>
     Maybe I'll add photos depending on the type of blog post<br></p>
 
@@ -33,22 +67,47 @@
   I hadn't done any of the assignments on HTML yet, but I knew I'd be able to pair any way because I already knew some HTML. So I just googled semantic elements and used w3schools.com to help me and I learned really quickly how to use them.<br>
 
   <b>Wireframe:</b><br>
-  <img src="/imgs/wireframe-blogs.png" alt="Wireframe">
+  <img src="../imgs/wireframe-blogs.png" alt="Wireframe" width="800px">
   </article>
 
 <br>
 <br>
-<footer>
-  <h4>ABOUT ME</h4>
-  <p>A little snippet about me</p>
-  <p><a href="https://www.linkedin.com/in/hannataylor">
-  <img src="/imgs/linkedin.png" alt="LinkedIn" style="width:32px;height:32px;border:0;"></a>
- &nbsp;&nbsp;
- <a href="https://github.com/hannataylor">
-<img src="/imgs/github.png" alt="GitHub" style="width:32px;height:32px;border:0;"></a></p>
 
+<section class="about-me">
+    <h3>ABOUT ME</h3>
+        <img src="../imgs/profilepic.png" alt="profile pic" height="130px" width="130px"></a>
+        <p>Hanna Taylor<br>
+        B.S. Business Administration ('13)<br>
+        Student at Dev Bootcamp<br>
+        Based in New York City</p>
+
+<a href="https://github.com/hannataylor">
+    <img src="../imgs/github.png" alt="github logo" height="44px" width="44px"></a>
+<a href="https://www.linkedin.com/in/hannataylor">  <img src="../imgs/linkedin.png" alt="linkedin logo"></a>
+<a href="https://www.facebook.com/hannataylor">
+    <img src="../imgs/facebook.png" alt="facebook logo"></a>
+<a href="https://twitter.com/hanna__taylor">
+    <img src="../imgs/twitter.png" alt="twitter logo"></a>
+<a href="http://wanderlusttour.com">
+    <img src="../imgs/tumblr.png" alt="tumblr logo"></a>
+</section>
+<br>
+<br>
+<br>
+
+<footer class="footer-nav">
+
+    <a href="http://hannataylor.github.io/">HOME</a>
+    <a href="#">ABOUT</a>
+
+    <a href="http://hannataylor.github.io/blog/index.html">BLOG   </a>
+
+    <a href="#">PROJECTS</a>
+    <br><br>
 
 </footer>
 
+<p class="copyright">&copy;2016 Hanna Taylor</p>
+</div>
 </body>
 </html>
