@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<head>
+  <title>Phase 0 - Week 5</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+</head>
+<body>
+
+<!--Dropdown Menu-->
+
+<nav id="navigation" class="site-navigation" role="navigation">
+    <ul class="menu">
+        <li class="menu-item"><a href="http://hannataylor.github.io/">HOME</a>
+            </li>
+
+        <li class="menu-item"><a href="#">ABOUT</a>
+            <ul class="dropdown">
+                <li class="menu-item sub-menu"><a href="http://hannataylor.github.io/contact.html">CONTACT</a></li>
+                <li class="menu-item sub-menu"><a href="#">RESUME</a></li>
+            </ul>
+        </li>
+
+        <li class="menu-item"><a href="http://hannataylor.github.io/blog/index.html">BLOG</a>
+        </li>
+
+        <li class="menu-item"><a href=".">PROJECTS</a>
+            <ul class="dropdown">
+                <li class="menu-item sub-menu"><a href="#">DBC</a></li>
+                <li class="menu-item sub-menu"><a href="#">PERSONAL</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+
+<header class="header">
+    <img src="../imgs/header.jpg" alt="header">
+</header>
+
+<br><br><br>
+
+<div class="site-body">
+
+
+<header class ="blog-title">
+  <h1>Phase 0 - Week 5 </h1>
+  <h2>Enumerable Methods</h2>
+  <h4>2/21/16</h4>
+  <br><br>
+
+<article class ="blog-post">
+  <p>Today I'm going to talk about Enumerables, and in particular, one Enumerable method: Enumerable#cycle.</p>
+
+  <strong>What is an Enumerable?</strong>
+  <p>The dictionary definition of "enumerate" is: to mention (a number of things) one by one.</p>
+  <p>Enumerable is a module. What's a module? An example of modules are Arrays and Hashes. Modules have methods that you can call on the module. You've seen methods before; some methods you've probably seen before are: <span class = "code">.each, .times, .length,</span> etc...Those sorts of things.</p>
+  <p>So since Enumerable is a module it also has methods you can use. Enumerables are also called mix-ins, because you can mix-in its methods with other modules like arrays and hashes.</p>
+  <p>Basically, how I see it, enumerables are like bonus methods that make your life easier. So back to the dictionary definition of "enumerate". The definition says it mentions things one by one, well that's kind of what enumerables do. For example with arrays, you've probably done a lot of <span class = "code">.each do |x|</span> type things. But with enumerables, it goes through things one by one for you. I'll explain what I mean when I teach you about Enumerable#cycle next.</p>
+  <strong>Enumerable#cycle</strong>
+  <p><span class = "code">.cycle</span> is just one example of an enumerable method that I'm going to show you. So you know how you can print a string multiple times by doing:</p>
+  <p><span class = "code">
+  string = "Hello, world!"<br>
+  5.times do print string<br>
+  end<br></span>
+  </p>
+  And your Ruby interpreter will print out the phrase <span class = "code">"Hello, world!"</span> 5 times? Well with <span class = "code">.cycle</span>, we can basically do the same thing, but in an easier way.</p>
+  <p>Using <span class = "code">.cycle</span>, we can say how many times we want to do what we want the element to do.</p>
+  <p>Here's an example:</p>
+  <p><span class = "code">
+  string = "Hello, world!"<br>
+  string.cycle(5) { |x| puts x} <br>
+  </p></span>
+  <p>That bit of code there would print "Hello, world!" 5 times.</p>
+  <p>Or if we did it like this:</p>
+  <p><span class = "code">
+  string = "Hello, world!"<br>
+  string.cycle { |x| puts x}<br>
+  </p>
+  <p><span class = "code">.cycle</span> would tell the Ruby interpreter to keep printing string FOREVER! So it works like a loop, too.</p>
+  At first it doesn't seem like it would be helpful. But let's say you weren't sure how many times you needed to print <span class = "code">"Hello, world!"</span>
+  Let's say at first you think you might need to print it 10 times, so you use the <span class = "code">10.times do</span> method. Seems easy enough. Not sure why you'd want to print <span class = "code">"Hello, world!"</span> repeatedly, but for the sake of this example, that's what you want to do. What if later you change your mind and you decide you need <span class = "code">"Hello, world!"</span> to print forever, until the end of time. Well, if you want to do that, you're going to have to write a whole new method. What a waste of time?! Right? Well, if you just used the enumerable method <span class = "code">.cycle</span>, from the beginning, you could change it to cycle and do what you ask it to do easily. You could make it cylce forever, or you could make it cycle a set number of times. Either way, it's one method to do both loop it and/or print it a set number of times.</p>
+  <p>In conclusion, enumerable methods are kind of like easy shortcuts to make your life easier and you should use them when you can.</p>
+
+
+
+
+
+
+
+</article>
+
+<section class="about-me">
+    <h3>ABOUT ME</h3>
+        <img src="../imgs/profilepic.png" alt="profile pic" height="130px" width="130px"></a>
+        <p>Hanna Taylor<br>
+        B.S. Business Administration ('13)<br>
+        Student at Dev Bootcamp<br>
+        Based in New York City</p>
+
+<a href="https://github.com/hannataylor">
+    <img src="../imgs/github.png" alt="github logo"></a>
+<a href="https://www.linkedin.com/in/hannataylor">  <img src="../imgs/linkedin.png" alt="linkedin logo"></a>
+<a href="https://www.facebook.com/hannataylor">
+    <img src="../imgs/facebook.png" alt="facebook logo"></a>
+<a href="https://twitter.com/hanna__taylor">
+    <img src="../imgs/twitter.png" alt="twitter logo"></a>
+<a href="http://wanderlusttour.com">
+    <img src="../imgs/tumblr.png" alt="tumblr logo"></a>
+<a href="https://www.instagram.com/hanna__taylor/">
+    <img src="../imgs/instagram.png" alt="instagram logo"></a>
+<a href="mailto:hanna.taylor91@gmail.com">
+    <img src="../imgs/email.png" alt="email logo"></a>
+</section>
+<br>
+<br>
+<br>
+
+<footer class="footer-nav">
+
+    <a href="http://hannataylor.github.io/">HOME</a>
+    <a href="#">ABOUT</a>
+
+    <a href="http://hannataylor.github.io/blog/index.html">BLOG   </a>
+
+    <a href="#">PROJECTS</a>
+    <br><br>
+
+</footer>
+
+<p class="copyright">&copy;2016 Hanna Taylor</p>
+</div>
+  </body>
+  </html>
