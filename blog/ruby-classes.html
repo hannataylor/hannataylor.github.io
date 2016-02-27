@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<head>
+  <title>Phase 0 - Week 6</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+</head>
+<body>
+
+<!--Dropdown Menu-->
+
+<nav id="navigation" class="site-navigation" role="navigation">
+    <ul class="menu">
+        <li class="menu-item"><a href="http://hannataylor.github.io/">HOME</a>
+            </li>
+
+        <li class="menu-item"><a href="http://hannataylor.github.io/about.html">ABOUT</a>
+            <ul class="dropdown">
+                <li class="menu-item sub-menu"><a href="http://hannataylor.github.io/contact.html">CONTACT</a></li>
+                <li class="menu-item sub-menu"><a href="#">RESUME</a></li>
+            </ul>
+        </li>
+
+        <li class="menu-item"><a href="http://hannataylor.github.io/blog/index.html">BLOG</a>
+        </li>
+
+        <li class="menu-item"><a href=".">PROJECTS</a>
+            <ul class="dropdown">
+                <li class="menu-item sub-menu"><a href="#">DBC</a></li>
+                <li class="menu-item sub-menu"><a href="#">PERSONAL</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+
+<header class="header">
+    <img src="../imgs/header.jpg" alt="header">
+</header>
+
+<br><br><br>
+
+<div class="site-body">
+
+
+<header class ="blog-title">
+  <h1>Phase 0 - Week 6 </h1>
+  <h2>Ruby Classes</h2>
+  <h4>2/26/16</h4>
+  <br><br>
+
+<article class ="blog-post">
+<p>Today I'm going to teach you a little something about Classes in Ruby.</p>
+<p>You might've heard the term "Object-Oriented Programming" before. Well, Ruby is an example of "Object-Oriented Programming". Everything in Ruby is an object. And these objects can take methods the things that the method tells them to do. And again, as you already know you can define variables, and create arrays and hashes and create all sorts of objects. </p>
+<p><span class = "emphasis">What is a class?</span>  A class is sort of like a blueprint for creating objects. It'll help you organize all those little variables and methods you have, and will keep them contained within the class. I think explaining classes with words just doesn't get the concept across, especially if this is your first time learning about them. I think it's best to look at code, and see what it's doing.</p>
+<p>I just moved to New York City last week, and I'm starting to miss my dogs back home, so I'm going to use dogs as an example. I'm going to create a class called "Dog". And it's going to be all about dogs. </p>
+<div class = "code">
+  Class Dog<br>
+    <div class = "code-indent-1">def initialize (breed,name,sex,age,toy)</div>
+      <div class = "code-indent-2">@breed = breed</div>
+      <div class = "code-indent-2">@name = name</div>
+      <div class = "code-indent-2">@sex = sex</div>
+      <div class = "code-indent-2">@age = age</div>
+      <div class = "code-indent-2">@toy = toy</div>
+    <div class = "code-indent-1">end</div><br>
+
+    <div class = "code-indent-1">def bark</div>
+      <div class = "code-indent-2">p "Woof! Woof!"</div>
+    <div class = "code-indent-1">end</div><br>
+
+    <div class = "code-indent-1">def gender</div>
+      <div class = "code-indent-2">if @sex == "female"</div>
+        <div class = "code-indent-3">return "Her"</div>
+      <div class = "code-indent-2">elsif @sex == "male"</div>
+        <div class = "code-indent-3">return "His"</div>
+      <div class = "code-indent-2">else</div>
+        <div class = "code-indent-3">return "Its"</div>
+      <div class = "code-indent-2">end</div><br>
+    <div class = "code-indent-1">end</div>
+
+    <div class = "code-indent-1">def display</div>
+      <div class = "code-indent-2">p "#{@name} is a(n) #{@age} year old #{@breed}. #{gender} favorite toy is a #{@toy}"</div>
+    <div class = "code-indent-1">end</div>
+end<br><br>
+
+new_dog = Dog.new("Yorkie","Sawyer","male","8","Squirrel")<br><br>
+
+new_dog.display<br>
+new_dog.bark<br><br>
+
+#Your ruby interpreter will display:<br>
+"Sawyer is a(n) 8 year old Yorkie. His favorite toy is a Squirrel"<br>
+Woof! Woof!
+<br>
+</div>
+
+<p>Did you follow along with what was happening?</p>
+<p>&bull;  First, I defined the class. For example this class was Dog. I could make another class called Cat. And another class called Car, or anything else. Do you see how putting things in classes would keep things organized? You wouldn't want your variables conflicting with another. And you wouldn't want to accidentally change a variable when you're working on a group of objects that are unrelated.</p>
+<p>&bull;  Then the first method you have to make is the <span class = "code">initialize</span> method. This sets up the class with some variables to get you started.</p>
+<p>&bull;  Then from there you can define whatever methods you want.</p>
+<p>&bull;  After you finish adding your methods, make sure you <span class = "code">end</span> the class.
+<p>&bull;  Then to use your class you can start a new object of that class. In this case, I named it <span class = "code">new_dog</span>, and you create the new object like this:</p>
+<p><span class = "code">new_dog = Dog.new("Yorkie","Sawyer","male","8","Squirrel")</span>.</p>
+</p>When you initialized it, you allowed certain variables as objects. When you create the new object, you have to fill in arguements with the correct number of variables.</p>
+<p>&bull;  Once the new object is made, you can call the different methods you made, it Ruby will run the program you created.</p>
+<br>
+<span class = "emphasis">Summary</span>
+<p>I hope that makes sense, after looking at the example code I made for you. Classes are like blueprints for objects and keeps your methods and variables contained within the class, so when you go on to a different subject or just different things in the code, you can keep them all organized within classes to prevent accidentally creating bugs in your code.</p>
+
+
+
+</article>
+
+<section class="about-me">
+    <h3>ABOUT ME</h3>
+        <img src="../imgs/profilepic.png" alt="profile pic" height="130px" width="130px"></a>
+        <p>Hanna Taylor<br>
+        B.S. Business Administration ('13)<br>
+        Student at Dev Bootcamp<br>
+        Based in New York City</p>
+
+<a href="https://github.com/hannataylor">
+    <img src="../imgs/github.png" alt="github logo"></a>
+<a href="https://www.linkedin.com/in/hannataylor">  <img src="../imgs/linkedin.png" alt="linkedin logo"></a>
+<a href="https://www.facebook.com/hannataylor">
+    <img src="../imgs/facebook.png" alt="facebook logo"></a>
+<a href="https://twitter.com/hanna__taylor">
+    <img src="../imgs/twitter.png" alt="twitter logo"></a>
+<a href="http://wanderlusttour.com">
+    <img src="../imgs/tumblr.png" alt="tumblr logo"></a>
+<a href="https://www.instagram.com/hanna__taylor/">
+    <img src="../imgs/instagram.png" alt="instagram logo"></a>
+<a href="mailto:hanna.taylor91@gmail.com">
+    <img src="../imgs/email.png" alt="email logo"></a>
+</section>
+<br>
+<br>
+<br>
+
+<footer class="footer-nav">
+
+    <a href="http://hannataylor.github.io/">HOME</a>
+    <a href="http://hannataylor.github.io/about.html">ABOUT</a>
+
+    <a href="http://hannataylor.github.io/blog/index.html">BLOG   </a>
+
+    <a href="#">PROJECTS</a>
+    <br><br>
+
+</footer>
+
+<p class="copyright">&copy;2016 Hanna Taylor</p>
+</div>
+  </body>
+  </html>

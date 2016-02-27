@@ -146,6 +146,32 @@ body {
   font-family: courier; serif;
 }
 
+.code-indent-1 {
+  font-family: courier; serif;
+  text-indent: 20px;
+}
+
+.code-indent-2 {
+  font-family: courier; serif;
+  text-indent: 40px;
+}
+
+.code-indent-3 {
+  font-family: courier; serif;
+  text-indent: 60px;
+}
+
+.code-indent-4 {
+  font-family: courier; serif;
+  text-indent: 80px;
+}
+
+.emphasis {
+  font-weight: bold;
+}
+
+
+
 /* Link Appearance */
 a:link {
     color: #2D2D2D;
