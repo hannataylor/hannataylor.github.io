@@ -107,7 +107,16 @@ body {
   width: 825px;
   background-color: #d9d9d9;
   padding-bottom: 20px;
-  padding-top:10px;
+  padding-top:25px;
+}
+
+.about {
+  margin:auto;
+  margin-top:0px;
+  width: 825px;
+  background-color: #d9d9d9;
+  padding-bottom: 20px;
+  padding-top:25px;
 }
 
 .blog {
@@ -115,6 +124,17 @@ body {
   width: 1000px;
   background-color: #f2f2f2;
   word-spacing: 25px;
+}
+
+.bold {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.underline_bold {
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 /* Link Appearance */
