@@ -1,0 +1,21 @@
+.site-body {
+  margin: auto;
+  background-color: #f2f2f2;
+  width: 1000px;
+  margin-top:-80px;
+  margin-bottom:25px;
+  padding-top:75px;
+}
+
+.header{
+  margin-bottom:0;
+  padding: 0;
+}
+
+.projects {
+  margin: auto;
+  margin-top:-150px;
+  padding-top:100px;
+  width: 1000px;
+  background-color: #f2f2f2;
+}
