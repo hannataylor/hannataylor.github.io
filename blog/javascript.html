@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <head>
   <title>Phase 0 - Week 7</title>
-  <link rel="icon" type="image/png" href="../imgs/favicon.png"/>
+  <link rel="icon" href="../imgs/favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="../imgs/favicon.png" type="image/x-icon">
   <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="stylesheets/default.css">
   <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
@@ -51,13 +52,52 @@
   <br><br>
 
 <article class ="blog-post">
-<p>Blog Post Goes Here</p>
+<p>This week I started learning JavaScript. In learning JavaScript, I quickly found that many things in the JavaScript language are similar to Ruby. One of those being JavaScript objects. JavaScript objects are much like Ruby Hashes. Both store data, in an organized way with keys and values.</p>
 
-<span class = "emphasis">Bolded Text</span>
-<div class = "code">Code (No indent)<br>
-    <div class = "code-indent-1">Code (1 indent)</div>
-      <div class = "code-indent-2">Code (2 indent)</div>
-        <div class = "code-indent-3">Code (3 indent)</div>
+<p>I'll show you a hash in Ruby and an object in JavaScript. Take note of the differences, and then I'll explain the differences below.</p>
+
+<p class = "emphasis">Ruby Hash</p>
+<div class = "code">city = { </div>
+    <div class = "code-indent-1">name: "New York City",</div>
+    <div class = "code-indent-1">state: "New York",</div>
+    <div class = "code-indent-1">population: "8.406 million",</div>
+    <div class = "code-indent-1">boroughs: ["Brooklyn","Queens","Manhattan","the Bronx","Staten Island"], </div>
+    <div class = "code-indent-1">mayor: "Bill de Blasio" </div>
+<div class = "code">} </div><br>
+
+<p class = "emphasis">JavaScript Object</p>
+<div class = "code">var city = { </div>
+    <div class = "code-indent-1">name: "New York City",</div>
+    <div class = "code-indent-1">state: "New York",</div>
+    <div class = "code-indent-1">population: "8.406 million",</div>
+    <div class = "code-indent-1">boroughs: ["Brooklyn","Queens","Manhattan","the Bronx","Staten Island"], </div>
+    <div class = "code-indent-1">mayor: "Bill de Blasio" </div>
+<div class = "code">}; </div><br>
+
+<p>Notice any differences? In JavaScript, variables always have to be defined by using the keyword <span class = "code">var</span> in front of the variable you want to define. Then to close the hash, JavaScript has slightly different syntax, and you just have to put a semicolon after the closing curly brace</p>
+
+<p>Now, how about if we want to access an item in the hash/object? What are the differences?</p>
+
+<p class = "emphasis">Ruby Hash</p>
+<div class = "code"># to access within your code</div>
+<div class = "code">city[:population] </div>
+<div class = "code">=>"8.406 million" </div><br>
+<div class = "code"># to print on screen</div>
+<div class = "code">puts "#{city[:name]} has a population of #{city[:population]} people."</div>
+<div class = "code">=>New York City has a population of 8.406 million people</div><br>
+
+<p class = "emphasis">JavaScript Object</p>
+<div class = "code"># to access within your code</div>
+<div class = "code">city.population; </div>
+<div class = "code">=>"8.406 million" </div><br>
+<div class = "code"># to print on screen</div>
+<div class = "code">console.log(city.name + " has a population of " + city.population + " people.")</div>
+<div class = "code">=>New York City has a population of 8.406 million people</div><br>
+
+<p>Do you see the minor differences?<br>
+In Ruby you access the key/value pair like this: <span class = "code">hashname[:key] </span><br>
+In JavaScript, you simply write it like this: <span class = "code">hashname.key; </span></p>
+<p>Simple as that! The biggest challenge in moving from working in Ruby to JavaScript is learning the differences in syntax. JavaScript has a lot of curly braces {} and semicolons ; and it make take some getting used to. But otherwise, creating things like a hash/object are more or less the same, minus a few minor syntactical differences.</p>
 
 </article>
 
