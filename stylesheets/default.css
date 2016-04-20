@@ -7,6 +7,10 @@ body {
     margin: auto;
 }
 
+#welcome_message {
+  margin: 0 20%;
+}
+
 /* Dropdown Menu */
 
 .site-navigation {
